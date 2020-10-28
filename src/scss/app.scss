@@ -1,5 +1,15 @@
-body {
-  img {
-    width: 80%;
-  }
-}
+@charset 'utf-8';
+
+// Reset
+@import 'modules/normalize';
+@import 'modules/reset';
+
+// Base styles
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/base';
+
+// Project styles
+@import 'components/header';
+@import 'components/footer';
+@import 'components/styles';

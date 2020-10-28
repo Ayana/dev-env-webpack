@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
+	watch: true,
 	entry: './src/js/app.js',
 	output: {
 		filename: 'bundle.js',
@@ -47,6 +48,10 @@ module.exports = {
 		new HtmlWebPackPlugin({
 			template: './src/index.html',
 			filename: 'index.html',
+		}),
+		new HtmlWebPackPlugin({
+			template: './src/fade.html',
+			filename: 'fade.html',
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',

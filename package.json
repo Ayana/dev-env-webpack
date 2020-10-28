@@ -23,5 +23,8 @@
 		"webpack-cli": "^3.3.11",
 		"webpack-dev-server": "^3.10.3"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"@barba/core": "^2.9.7",
+		"gsap": "^3.5.1"
+	}
 }

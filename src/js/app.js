@@ -1,4 +1,4 @@
 import { Func } from './Func'
-import './styles/app.scss'
+import '../scss/app.scss'
 
 console.log(Func('Hello'))

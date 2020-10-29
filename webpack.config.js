@@ -45,10 +45,15 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/i,
 				use: [
-					'style-loader', // 3. Inject styles into DOM
+					MiniCssExtractPlugin.loader, // 3. Inject styles into DOM
 					'css-loader', // 2. Turns css into commonjs
 					'sass-loader', // 1. Turns sass into css
 				],
+				// use: [
+				// 	'style-loader', // 3. Inject styles into DOM
+				// 	'css-loader', // 2. Turns css into commonjs
+				// 	'sass-loader', // 1. Turns sass into css
+				// ],
 			},
 			{
 				test: /\.html$/i,
@@ -63,6 +68,8 @@ module.exports = {
 							name: '[name]_[hash].[ext]',
 							outputPath: 'images',
 							esModule: false,
+							// publicPath: '../',
+							// useRelativePaths: true,
 						},
 					},
 				],

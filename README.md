@@ -1,6 +1,6 @@
 # Webpack Boilerplate with Sass
 
-Boilerplate of webpack dev environment
+Simple Webpack Boilerplate with Sass. Added barba.js and GSAP.
 
 ## Script
 

@@ -9,7 +9,7 @@ module.exports = {
 	// watch: true, // For production build
 	entry: './src/js/app.js',
 	output: {
-		filename: 'bundle.js',
+		filename: '[name].[contenthash].bundle.js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	devServer: {
@@ -29,8 +29,7 @@ module.exports = {
 			filename: 'fade.html',
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].css',
-			chunkFilename: '[id].css',
+			filename: '[name].[contenthash].css',
 		}),
 	],
 	module: {
@@ -68,7 +67,7 @@ module.exports = {
 							name: '[name]_[hash].[ext]',
 							outputPath: 'images',
 							esModule: false,
-							// publicPath: '../',
+							// publicPath: '../', // when need to customize path
 							// useRelativePaths: true,
 						},
 					},

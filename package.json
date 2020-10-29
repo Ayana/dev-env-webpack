@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "app.js",
 	"scripts": {
-		"build": "webpack",
-		"start": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js"
+		"build": "webpack --config webpack.config.js",
+		"start": "webpack-dev-server --open"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.6",
@@ -25,6 +25,7 @@
 	},
 	"dependencies": {
 		"@barba/core": "^2.9.7",
+		"clean-webpack-plugin": "^3.0.0",
 		"gsap": "^3.5.1"
 	}
 }
